@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { ReactNode } from "react";
-import { PlaceHolder, Text } from "../atoms";
+import { Card, PlaceHolder, Text } from "../atoms";
 
 export default function Home(): ReactNode {
   return (
@@ -10,16 +10,41 @@ export default function Home(): ReactNode {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <PlaceHolder width={50} height={25} round={"sm"} />
-        <button>boton</button>
-        <Text
-          keyText="title"
-          size="md"
-          weight="normal"
-          variant="h1"
-          color="primary"
-        />
+      <main style={{ display: "flex", flexWrap: "wrap" }}>
+        <Card>
+          <PlaceHolder width={50} height={25} round={"sm"} />
+
+          <Text
+            keyText="title"
+            size="md"
+            weight="normal"
+            variant="span"
+            color="primary"
+          />
+        </Card>
+        <Card>
+          <PlaceHolder width={50} height={25} round={"sm"} />
+
+          <Text
+            keyText="title"
+            size="md"
+            weight="normal"
+            variant="span"
+            color="primary"
+            align="center"
+          />
+        </Card>
+        <Card>
+          <PlaceHolder width={50} height={25} round={"sm"} />
+
+          <Text
+            keyText="title"
+            size="md"
+            weight="normal"
+            variant="span"
+            color="primary"
+          />
+        </Card>
       </main>
       <footer></footer>
     </div>
