@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { ReactNode } from "react";
+import { PlaceHolder } from "../atoms";
 
 export default function Home(): ReactNode {
   return (
@@ -10,6 +11,7 @@ export default function Home(): ReactNode {
       </Head>
 
       <main>
+        <PlaceHolder width={50} height={25} round={"sm"} />
         <button>boton</button>
         hola :D
       </main>
