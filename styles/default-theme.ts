@@ -4,7 +4,7 @@ export const theme: ThemeProps = {
   round: {
     sm: "5px",
   },
-  unit: (s: number): string => `${s * 4}px`,
+  unit: (s: number): string => (!s ? "100%" : `${s * 4}px`),
   placeholder: {
     primary: "#999",
     secondary: "#aaa",

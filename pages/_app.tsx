@@ -1,16 +1,10 @@
 import { AppProps } from "next/dist/next-server/lib/router/router";
 import { ReactNode } from "react";
-import { ThemeProvider } from "styled-components";
-import { theme } from "../styles/theme";
 import "../styles/globals.css";
 import "../i18n";
 
 function MyApp({ Component, pageProps }: AppProps): ReactNode {
-  return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

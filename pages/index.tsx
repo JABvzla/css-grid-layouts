@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { ReactNode } from "react";
-import { Card, PlaceHolder, Text } from "../atoms";
+import { PlaceHolder } from "../atoms";
+import { BasicLayout } from "../templates/basic-layout";
 
 export default function Home(): ReactNode {
   return (
@@ -9,44 +10,11 @@ export default function Home(): ReactNode {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main style={{ display: "flex", flexWrap: "wrap" }}>
-        <Card>
-          <PlaceHolder width={50} height={25} round={"sm"} />
-
-          <Text
-            keyText="title"
-            size="md"
-            weight="normal"
-            variant="span"
-            color="primary"
-          />
-        </Card>
-        <Card>
-          <PlaceHolder width={50} height={25} round={"sm"} />
-
-          <Text
-            keyText="title"
-            size="md"
-            weight="normal"
-            variant="span"
-            color="primary"
-            align="center"
-          />
-        </Card>
-        <Card>
-          <PlaceHolder width={50} height={25} round={"sm"} />
-
-          <Text
-            keyText="title"
-            size="md"
-            weight="normal"
-            variant="span"
-            color="primary"
-          />
-        </Card>
-      </main>
-      <footer></footer>
+      <BasicLayout
+        header={<PlaceHolder height={10} />}
+        content={<PlaceHolder height={200} />}
+        footer={<PlaceHolder height={50} />}
+      />
     </div>
   );
 }
