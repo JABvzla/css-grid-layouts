@@ -1,10 +1,10 @@
 declare global {
-  interface GlobalTheme {
-    theme: Theme;
+  interface Theme {
+    theme: ThemeProps;
   }
 }
 
-export interface Theme {
+export interface ThemeProps {
   round: {
     sm: string;
   };
@@ -24,6 +24,15 @@ export interface Theme {
       primary: string;
       muted: string;
       accent: string;
+    };
+    sizes: {
+      xxsm: string;
+      xsm: string;
+      sm: string;
+      md: string;
+      lg: string;
+      xlg: string;
+      xxlg: string;
     };
   };
 }

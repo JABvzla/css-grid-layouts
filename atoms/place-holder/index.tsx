@@ -12,7 +12,7 @@ export function PlaceHolder(props: PlaceHolderProps): JSX.Element {
 }
 
 const StyledPlaceHolder = styled.div(
-  ({ theme, width, height, round = "0px" }: GlobalTheme & PlaceHolderProps) => `
+  ({ theme, width, height, round = "0px" }: Theme & PlaceHolderProps) => `
     width: ${theme.unit(width)};
     height: ${theme.unit(height)};
     background: linear-gradient(90deg, ${theme.placeholder.secondary} 0%, ${theme.placeholder.primary} 35%, ${theme.placeholder.secondary} 100%);

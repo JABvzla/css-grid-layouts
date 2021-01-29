@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../styles/theme";
 import "../styles/globals.css";
+import "../i18n";
 
 function MyApp({ Component, pageProps }: AppProps): ReactNode {
   return (

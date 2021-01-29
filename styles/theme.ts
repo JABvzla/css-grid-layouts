@@ -1,6 +1,6 @@
-import { Theme } from "../types/theme";
+import { ThemeProps } from "../types/theme";
 
-export const theme: Theme = {
+export const theme: ThemeProps = {
   round: {
     sm: "5px",
   },
@@ -20,6 +20,15 @@ export const theme: Theme = {
       primary: "#000",
       muted: "#000",
       accent: "#ff0",
+    },
+    sizes: {
+      xxsm: "0.4rem",
+      xsm: "0.6rem",
+      sm: "0.8rem",
+      md: "1rem",
+      lg: "1.2rem",
+      xlg: "1.4rem",
+      xxlg: "2rem",
     },
   },
 };
