@@ -12,12 +12,12 @@ export const theme: ThemeProps = {
   background: {
     colors: {
       primary: "#333",
-      secondary: "#acc",
+      secondary: "#444",
     },
   },
   text: {
     colors: {
-      primary: "#000",
+      primary: "#ccc",
       muted: "#000",
       accent: "#ff0",
     },
