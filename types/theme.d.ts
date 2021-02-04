@@ -8,6 +8,7 @@ export interface ThemeProps {
   round: {
     sm: string;
   };
+  onMobile: (s: string) => string;
   unit: (s: number) => string;
   placeholder: {
     primary: string;
@@ -17,6 +18,7 @@ export interface ThemeProps {
     colors: {
       primary: string;
       secondary: string;
+      code: string;
     };
   };
   text: {

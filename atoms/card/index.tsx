@@ -1,8 +1,10 @@
+import { HTMLProps } from 'react';
 import styled from 'styled-components';
 
 export interface CardProps {
   children?: JSX.Element | JSX.Element[];
-  
+  onClick?: () => void;
+  className?: string;
 }
 
 export function Card(props: CardProps): JSX.Element {
@@ -11,6 +13,8 @@ export function Card(props: CardProps): JSX.Element {
 
 const StyledCard = styled.div(
   ({ theme }: Theme & CardProps) => `
+    outline: none;
+
     margin: 10px;
     width: fit-content;
     padding: ${theme.unit(2)};

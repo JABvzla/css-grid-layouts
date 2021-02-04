@@ -4,6 +4,8 @@ export const theme: ThemeProps = {
   round: {
     sm: "5px",
   },
+  onMobile: (s: string) => `@media (max-width: 800px) { ${s} }`,
+
   unit: (s: number): string => (!s ? "100%" : `${s * 4}px`),
   placeholder: {
     primary: "#999",
@@ -11,8 +13,9 @@ export const theme: ThemeProps = {
   },
   background: {
     colors: {
-      primary: "#333",
-      secondary: "#444",
+      primary: "rgba(45, 40, 60, 1)",
+      secondary: "#ddd",
+      code: "rgba(42, 39, 52, 1)",
     },
   },
   text: {

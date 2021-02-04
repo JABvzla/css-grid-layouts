@@ -35,10 +35,10 @@ const StyledLayout = styled.div<Theme & StyledLayoutProps>(
   width: 100%;
   padding: ${theme.unit(3)};
   grid-gap: ${theme.unit(3)};
-  background-color: ${theme.background.colors.primary};
+  background-color: ${theme.background.colors.secondary};
   color: ${theme.text.colors.primary};
   & * {
-    background-color: ${theme.background.colors.secondary};
+    background-color: ${theme.background.colors.primary};
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ const StyledLayout = styled.div<Theme & StyledLayoutProps>(
     min-height: 100%;
     padding: ${theme.unit(1)};
     grid-gap: ${theme.unit(1)};
-    font-size: .8rem;
+    font-size: .7rem;
   
   `}
 
