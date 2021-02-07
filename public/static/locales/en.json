@@ -3,5 +3,7 @@
   "subtitle": "Example subtitle",
   "layout": "LAYOUTS",
   "preview": "preview",
-  "copy": "copy code"
+  "copy": "copy code",
+  "disclaimer_title": "Disclaimer",
+  "disclaimer_content": "In gravida purus quam, eget molestie leo porttitor ut. Duis vel viverra dui. Sed maximus ex diam, sit amet vulputate lorem feugiat sed. Sed dignissim odio libero, id mollis ante accumsan eget. Nullam sit amet libero ex. Fusce euismod lobortis dictum. Etiam pharetra nunc sapien, a convallis leo sodales convallis. Quisque sagittis arcu arcu, non malesuada metus fermentum vel. Pellentesque a urna iaculis, pulvinar justo et, molestie sem"
 }

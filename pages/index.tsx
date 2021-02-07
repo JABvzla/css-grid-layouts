@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { Card, Grid, Text } from "../atoms";
 import * as Layouts from "../layouts";
 import { CodePreview } from "../molecules/code-preview";
+import { Disclaimer } from "../molecules/disclaimer";
 import { LayoutViewer } from "../templates/layout-viewer";
 
 export default function Home(): ReactNode {
@@ -24,6 +25,17 @@ export default function Home(): ReactNode {
 
       <StyledMain visible={!!selectedLayout}>
         <div>
+          <Text
+            weight="bold"
+            color="secondary"
+            variant="h1"
+            size="xxlg"
+            keyText={"CSS-GRID"}
+            align="center"
+          />
+
+          <Disclaimer />
+
           <Text
             weight="bold"
             color="secondary"
