@@ -62,6 +62,7 @@ export default function Home(): ReactNode {
             X
           </div>
           <CodePreview
+            link={`preview/${selectedLayout}`}
             scss={Layouts[selectedLayout]?.css || ""}
             html={Layouts[selectedLayout]?.html || ""}
           />

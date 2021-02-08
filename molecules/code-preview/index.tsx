@@ -4,6 +4,7 @@ import { ButtonMD, Highlight } from "../../atoms";
 
 export interface CodePreviewProps {
   children?: JSX.Element | JSX.Element[];
+  link: string;
   html: string;
   scss: string;
 }
@@ -11,7 +12,7 @@ export interface CodePreviewProps {
 export function CodePreview(props: CodePreviewProps): JSX.Element {
   return (
     <StyledCodePreview {...props}>
-      <Link href={`preview/layout1`}>
+      <Link href={props.link}>
         <a target="_blank">
           <ButtonMD text="preview" />
         </a>
