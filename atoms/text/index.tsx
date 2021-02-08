@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useTranslation } from "react-i18next";
+import { sign } from 'crypto';
 
 
 export interface TextProps {
@@ -18,15 +19,13 @@ export function Text({ variant = "span", ...props}: TextProps): JSX.Element {
   const { t } = useTranslation();
   const text = !!props.keyText ? t(props.keyText) : props.children;
 
-  const StyledText = getComponent(variant);
+  const StyledText = styled[variant](
+    ({ theme, color, align, weight, size }: Theme & TextProps) => `
+      align: ${align};
+      font-size: ${theme.text.sizes[size]};
+      font-weight: ${weight};
+      color: ${theme.text.colors[color]}
+    `
+  );
   return (<StyledText {...props}>{text}</StyledText>)
 }
-
-const getComponent = variant => styled[variant](
-  ({ theme, color, align, weight, size }: Theme & TextProps) => `
-    align: ${align};
-    font-size: ${theme.text.sizes[size]};
-    font-weight: ${weight};
-    color: ${theme.text.colors[color]}
-  `
-);
