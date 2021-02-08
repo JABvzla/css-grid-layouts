@@ -33,7 +33,6 @@ const StyledCodePreview = styled.div(
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-  overflow: scroll;
 
   & > pre {
     width: 90%;

@@ -36,7 +36,6 @@ const PrismStyled = createGlobalStyle<Theme>`
   ${({ theme }) => `
     .prism-code {
       padding: ${theme.unit(5)};
-      overflow-y: scroll;
     }
   `}
 `;

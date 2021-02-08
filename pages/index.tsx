@@ -84,7 +84,7 @@ const StyledMain = styled.main<Theme & StyledMainProps>(
   & > div:nth-child(1) {
     flex: 1;
     text-align: center;
-    overflow: scroll;
+    overflow-y: scroll;
     background: ${theme.background.colors.secondary};
   }
   & > div:nth-child(2) {
@@ -100,7 +100,8 @@ const StyledMain = styled.main<Theme & StyledMainProps>(
 
     background: ${theme.background.colors.primary};
     flex: 1;
-    overflow: scroll;
+    min-height: 100vh;
+    overflow-y: scroll;
     
     & > * {
       opacity: 1;
